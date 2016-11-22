@@ -19,59 +19,54 @@
             line-height: 1.8;
             color: #818181;
         }
-        
-        h1,
-        h2,
-        h3 {
+
+
+        h1 {
             font-family: 'Racing Sans One', cursive;
-            font-size: 24px;
+            font-size: 48px;
             text-transform: uppercase;
             color: #303030;
             font-weight: 600;
-            margin-bottom: 30px;
+            margin-bottom: 20px;
         }
-        
-        h4 {
+
+        h2, h3, h4, p {
             font-family: 'Open Sans', sans-serif;
-            font-size: 19px;
-            line-height: 1.375em;
-            color: #303030;
-            font-weight: 400;
             margin-bottom: 30px;
         }
-        
+
         .jumbotron {
             font-family: 'Racing Sans One', cursive;
             background-color: #252120;
             color: #fff;
             padding: 100px 25px;
         }
-        
+
         .container-fluid {
             padding: 30px 50px;
         }
-        
+
         .bg-grey {
             background-color: #f6f6f6;
         }
-        
+
         .logo {
             color: #f4511e;
             font-size: 200px;
         }
-        
+
         .thumbnail {
             padding: 0 0 15px 0;
             border: none;
             border-radius: 0;
         }
-        
+
         .thumbnail img {
             width: 100%;
             height: 100%;
             margin-bottom: 10px;
         }
-        
+
         .carousel-inner img {
             -webkit-filter: grayscale(90%);
             filter: grayscale(90%);
@@ -80,32 +75,32 @@
             /* Set width to 100% */
             margin: auto;
         }
-        
+
         .carousel-caption h3 {
             color: #fff !important;
         }
-        
+
         @media (max-width: 600px) {
             .carousel-caption {
                 display: none;
                 /* Hide the carousel text when the screen is less than 600 pixels wide */
             }
         }
-        
+
         .carousel-control.right,
         .carousel-control.left {
             background-image: none;
             color: #f4511e;
         }
-        
+
         .carousel-indicators li {
             border-color: #f4511e;
         }
-        
+
         .carousel-indicators li.active {
             background-color: #f4511e;
         }
-        
+
         .item h4 {
             font-size: 19px;
             line-height: 1.375em;
@@ -113,11 +108,11 @@
             font-style: italic;
             margin: 70px 0;
         }
-        
+
         .item span {
             font-style: normal;
         }
-        
+
         .navbar {
             margin-bottom: 0;
             background-color: #252120;
@@ -130,36 +125,36 @@
             font-family: 'Racing Sans One', cursive;
             opacity: 0.9;
         }
-        
+
         .navbar li a,
         .navbar .navbar-brand {
             color: #fff !important;
         }
-        
+
         .navbar-nav li a:hover,
         .navbar-nav li.active a {
             color: #000 !important;
             background-color: #fff !important;
         }
-        
+
         .navbar-default .navbar-toggle {
             border-color: transparent;
             color: #fff !important;
         }
-        
+
         .open .dropdown-toggle {
             color: #fff;
             background-color: #555 !important;
         }
-        
+
         .dropdown-menu li a {
             color: #000 !important;
         }
-        
+
         .dropdown-menu li a:hover {
             background-color: red !important;
         }
-        
+
         .btn {
             padding: 10px 20px;
             background-color: #333;
@@ -167,24 +162,24 @@
             border-radius: 0;
             transition: .2s;
         }
-        
+
         .btn:hover,
         .btn:focus {
             border: 1px solid #333;
             background-color: #fff;
             color: #000;
         }
-        
+
         footer .glyphicon {
             font-size: 20px;
             margin-bottom: 20px;
             color: #f4511e;
         }
-        
+
         .slideanim {
             visibility: hidden;
         }
-        
+
         .slide {
             animation-name: slide;
             -webkit-animation-name: slide;
@@ -192,21 +187,21 @@
             -webkit-animation-duration: 1s;
             visibility: visible;
         }
-        
+
         #googleMap {
             width: 100%;
             height: 400px;
-            -webkit-filter: grayscale(100%);
-            filter: grayscale(100%);
+            -webkit-filter: grayscale(30%);
+            filter: grayscale(30%);
         }
-        
+
         @media (max-width: 600px) {
             .carousel-caption {
                 display: none;
                 /* Hide the carousel text when the screen is less than 600 pixels wide */
             }
         }
-        
+
         @keyframes slide {
             0% {
                 opacity: 0;
@@ -217,7 +212,7 @@
                 transform: translateY(0%);
             }
         }
-        
+
         @-webkit-keyframes slide {
             0% {
                 opacity: 0;
@@ -228,7 +223,7 @@
                 -webkit-transform: translateY(0%);
             }
         }
-        
+
         @media screen and (max-width: 768px) {
             .col-sm-4 {
                 text-align: center;
@@ -239,29 +234,76 @@
                 margin-bottom: 35px;
             }
         }
-        
+
         @media screen and (max-width: 480px) {
             .logo {
                 font-size: 150px;
             }
         }
-        
+
         .parallax-window {
             min-height: 400px;
             background: transparent;
         }
-        
+
         .navbar-brand {
             padding: 0px;
             /* firefox bug fix */
         }
-        
+
         .navbar-brand>img {
             height: 200%;
             padding: 2px 0px;
             /* firefox bug fix */
             width: auto;
         }
+		
+		.parallax {
+    /* The image used */
+    background-image: url('Images/team.jpg');
+
+    /* Full height */
+    height: 800px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: calc(50%) calc(0%);
+    background-repeat: no-repeat;
+    background-size: cover;
+	position: relative;
+	width: 100%;
+			/* Effects */
+	-webkit-filter: grayscale(60%);
+            filter: grayscale(60%);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	margin-top: auto;
+}
+		.parallax2 {
+    /* The image used */
+    background-image: url('Images/teampic2.jpg');
+
+    /* Full height */
+    height: 800px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: calc(50%) calc(40%);
+    background-repeat: no-repeat;
+    background-size: cover;
+	position: relative;
+	width: 100%;
+			/* Effects */
+	-webkit-filter: grayscale(60%);
+            filter: grayscale(60%);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	margin-top: auto;
+}
     </style>
 
 </head>
@@ -295,73 +337,66 @@
 
         </div>
     </nav>
-    
-    <img src="Images/teampic1.JPG" class="img-responsive center-block" alt="logo">
-<!-- Container (About Section) -->
-    
 
-   
+<!-- Container (About Section) -->
+
+
+<div class="container-fluid parallax"></div>
 <div id="about">
-        <div class="container-fluid bg-grey">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-4">
                     <img class="logo slideanim" src="Images/Copy of Club Logo.png" height="300" alt="" />
 
                 </div>
                 <div class="col-sm-8">
-                    <h1>The Team</h1><br>
+                    <h1>The Team</h1>
                     <h4><strong>MISSION:</strong> Our mission lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
                         ut aliquip ex ea commodo consequat.</h4>
-                    <p><strong>VISION:</strong> Our vision Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                    <h4><strong>VISION:</strong> Our vision Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
                         ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                        nisi ut aliquip ex ea commodo consequat.</p>
+                        nisi ut aliquip ex ea commodo consequat.</h4>
                 </div>
             </div>
         </div>
-        <div class="container-fluid">
-            <div class="row">
+        
+<div class="container-fluid bg-grey">
+      <div class="row">
                 <div class="col-sm-8">
 
-                    <h2>The Competition</h2>
-                    <p>For 36 years, SAE has hosted an automotive design competition for collegiate engineering students, building formula-style racecars. The purpose of the competition is to challenge teams from around the world to design and build open-wheel
-                        cars targeted towards the avid amateur or weekend autocross racer. The car must satisfy a series of safety and design requirements that demand clever problem solving and engineering prowess.</p>
+                    <h1>The Competition</h1>
+                    <h4>For 36 years, SAE has hosted an automotive design competition for collegiate engineering students, building formula-style racecars. The purpose of the competition is to challenge teams from around the world to design and build open-wheel
+                        cars targeted towards the avid amateur or weekend autocross racer. The car must satisfy a series of safety and design requirements that demand clever problem solving and engineering prowess. The competition is broken into two main categories: <strong>Static and Dynamic.</strong></h4>
 
-                    <h4>The competition is broken into two main categories: Static and Dynamic events.</h4>
-
-                    <h4>Static Events:</h4>
-                    Design: teams must elaborate upon and defend their design choices. Cost: detailing the expected manufacturing cost for the production of 1000 vehicles. Business Presentation: delivering a business case to convince corporate executives that the team’s
-                    design will please buyers and be profitable.
-                    <h4>Dynamic Events:</h4>
-                    <p>Acceleration: 75 meters straight line acceleration. Autocross: a coned-off road course to test the maneuverability of the car. Skid-pad: testing the lateral acceleration of the car. Endurance: 22km race incorporating a driver change
+                    <h3><strong>Static Events:</strong></h3>
+                    <h4><strong>Design:</strong> teams must elaborate upon and defend their design choices. Cost: detailing the expected manufacturing cost for the production of 1000 vehicles. Business Presentation: delivering a business case to convince corporate executives that the team’s
+                    design will please buyers and be profitable.</h4>
+                    <h3><strong>Dynamic Events:</strong></h3>
+                    <h4>Acceleration: 75 meters straight line acceleration. Autocross: a coned-off road course to test the maneuverability of the car. Skid-pad: testing the lateral acceleration of the car. Endurance: 22km race incorporating a driver change
                         to test the durability of the car. It is regarded as the most difficult event as only around 40% of the field completes the course. Fuel Efficiency: runs concurrently with the endurance event, determines the fuel efficiency of
-                        the car.</p>
+                        the car.</h4>
 
-                    <p>The cars are judged on all 8 categories and receive a cumulative score out of 1000 points.<br> The North American competitions are held annually at Michigan International Speedway in Brooklyn, Michigan and in Lincoln, Nebraska. The
-                        foremost competition in the world is the Michigan event; the four-day competition draws 120 teams from schools across the United States, Europe, Australia, South America, and Asia.</p> <br>
-                    <p>
+                    <h4>The cars are judged on all 8 categories and receive a cumulative score out of 1000 points.<br> The North American competitions are held annually at Michigan International Speedway in Brooklyn, Michigan and in Lincoln, Nebraska. The
+                        foremost competition in the world is the Michigan event; the four-day competition draws 120 teams from schools across the United States, Europe, Australia, South America, and Asia.</h4>
+                    <h4>
                         For more information, please visit the official website of the <a href="http://students.sae.org/cds/formulaseries/about/">Formula SAE Series.</a>
-                    </p>
+                    </h4>
 
                 </div>
                 <div class="col-sm-4">
-
-
-                    <img src="Images/FSAE 2014/" class="img-responsive img-rounded" alt="">
-
-
-                </div>
+                <img src="Images/teampic2.jpg" class="img-responsive" alt="Placeholder image"> </div>
             </div>
         </div>
     </div>
 
     <div id="media" class="container-fluid text-center">
-        <h1>Media</h1>
+      <h1>Media</h1>
         <div class="embed-responsive embed-responsive-16by9">
             <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/lRbgd5FwrVQ"></iframe>
         </div>
         <!-- Container (Portfolio Section) -->
         <div id="sponsors" class="container-fluid text-center bg-grey">
-            <h2>Our Sponsors</h2><br>
+            <h1>Our Sponsors</h1><br>
             <div class="row text-center slideanim">
                 <div class="col-sm-4">
                     <div class="thumbnail">
@@ -384,16 +419,19 @@
                         <p></p>
                     </div>
                 </div>
-            </div><br>
-            <h3>Are you interested in becoming a sponsor?</h3><br>
+            </div>
+            <div id="googleMap" style="height:400px;width:100%;"></div>
+            <br>
+            <h1>Interested in becoming a sponsor?</h1><br>
             <button class="btn btn-default btn-lg">Get in Touch</button>
 
         </div>
+        
 
 
         <!-- Container (Contact Section) -->
         <div id="contact" class="container-fluid bg-grey">
-            <h2 class="text-center">CONTACT US</h2><br>
+            <h1 class="text-center">CONTACT US</h1><br>
             <div class="row">
 
                 <div class="col-sm-5">
@@ -423,7 +461,7 @@
         </div>
     </div>
 
-    <div id="googleMap" style="height:400px;width:100%;"></div>
+    
 
 
     <!-- Add Google Maps -->
